@@ -1,0 +1,69 @@
+* {
+    /* 外距 */
+    margin: 0;
+    /* 內距 */
+    padding: 0;
+    /* 解決padding增加的距離 */
+    box-sizing: border-box;
+}
+
+.box {
+    /* 1.全部 */
+    /* padding: 20px; */
+
+    /* 2. 上下 左右 */
+    /* padding: 20px 40px; */
+
+    /* 3. 上下 左右 下 */
+    /* padding: 20px 40px 10px; */
+
+    /* 4. 上 右 下 左 */
+    /* padding: 10px 20px 40px 50px; */
+}
+
+.banner {
+    width: 100%;
+    /* vh 螢幕高度 */
+    height: 100vh;
+    background-image: url(./img/banner_bg.jpeg);
+    /* 等比例縮放 */
+    background-size: cover;
+    /* background-position: 50px 0; */
+    /* background-repeat: no-repeat; */
+}
+
+nav{
+    padding: 30px;
+}
+nav > a{
+    /* 移除底線 */
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    margin: 0 20px;
+}
+.banner_data{
+    width: 400px;
+    /* tac */
+    text-align: center;
+    /* 萬能置中 */
+    margin: 300px auto;
+    /* margin-top: 300px; */
+    /* margin: 300px auto 0 auto  ; */
+    
+}
+.banner_data > p{
+    color: #aaa;
+}
+.banner_data > h1{
+    color: #ccc;
+    font-size: 70px;
+}
+
+/* 最新消息 */
+.new{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+}
