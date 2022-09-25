@@ -74,7 +74,12 @@ nav > a{
     color: #ccc;
     font-size: 70px;
 }
-
+@media screen and (max-width:414px) {
+    .banner_data > hr{
+       width: 90%;
+       margin: 0 auto;
+    }
+}
 /* 最新消息 */
 .new_box{
     background: #eee;
