@@ -5,6 +5,7 @@
     padding: 0;
     /* 解決padding增加的距離 */
     box-sizing: border-box;
+    /* background: #eee; */
 }
 
 .box {
@@ -30,6 +31,13 @@
     background-size: cover;
     /* background-position: 50px 0; */
     /* background-repeat: no-repeat; */
+}
+@media screen and (max-width:768px) {
+    .banner {
+       
+        background-position: -380px 0;
+       
+    }
 }
 
 nav{
@@ -61,9 +69,190 @@ nav > a{
 }
 
 /* 最新消息 */
+.new_box{
+    background: #eee;
+
+}
 .new{
     width: 1200px;
     margin: 0 auto;
     display: flex;
-    flex-direction: row;
+    gap: 20px;
+    /* gird */
+    /* grid-gap */
+    padding: 50px 0;
+}
+@media screen and (max-width:768px) {
+    .new{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        gap: 20px;
+        padding: 50px 0;
+    }
+}
+.new_card{
+    width: 49%;
+    height: 100%;
+    background: #fff;
+    padding-bottom: 60px;
+}
+@media screen and (max-width:768px) {
+    .new_card{
+        width: 100%;
+       
+    }
+}
+.new_card > img{
+    width: 100%;
+    height: 400px; 
+    /* 百分比 */
+    object-fit: cover;
+}
+.card_data{
+    padding: 0 30px;
+}
+.new_title{
+    color: #aaa;
+    text-align: center;
+    font-size: 24px;
+    /* 文字與文字之間的距離 */
+    letter-spacing:10px ;
+
+   
+}
+.card_data > hr {
+    width: 50%;
+    margin: 20px auto;
+}
+.card_data >h2{
+    text-align: center;
+
+}
+
+.data_p{
+    margin: 20px 0;
+}
+.card_data > a{
+    text-decoration: none;
+    color: #aaa;
+    /* 線的大小 線的樣式 線的顏色 */
+    border: 1px solid #aaa;
+    display: block;
+    width: 150px;
+    text-align: center;
+    padding: 15px 0;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+/* hover = 觸摸到要做的事情 */
+.card_data > a:hover{
+    background: #aaa;
+    border: 0;
+    color: #fff;
+}
+.bg_fixed{
+    background-image: url(./img/bread.jpeg);
+    background-attachment: fixed;
+}
+
+.bg_fixed h3{
+    text-align: center;
+    font-size: 60px;
+    letter-spacing: 8px;
+    font-weight: 100;
+    padding: 50px 0;
+    color: #fff;
+    /* 濾鏡 */
+    backdrop-filter: blur(5px) opacity(80%);
+    transition: all 0.5s;
+
+}
+.bg_fixed h3:hover{
+    backdrop-filter: blur(0px) opacity(100%);
+
+}
+
+.work > h3{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 200;
+    letter-spacing:20px;
+    color: #ccc;
+}
+.work_list{
+    width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    gap: 20px;
+}
+@media screen and (max-width:768px) {
+    
+}
+
+.work_card{
+    width: 50%;
+    text-align: center;
+    height: 400px;
+    /* background-image: url(./img/new1.jpeg); */
+    color: #fff;
+}
+
+.work_card>h1 {
+    font-size: 60px;
+    padding: 160px 0;
+    backdrop-filter: blur(5px) opacity(80%);
+
+}
+.map{
+    margin-top: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+footer{
+    background: #252525;
+    color: #fff;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.icon{
+    margin: 10px 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.fb{
+    width: 40px;
+}
+
+
+
+#boo{
+    color: pink;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .new{
+        width: 100%;
+        margin: 0 auto;
+        display: block;
+        gap: 20px;
+        padding: 50px 0;
+    }
+    .work_list{
+        width: 100%;
+         display: block;
+        
+     }
+     .work_card{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+   
 }

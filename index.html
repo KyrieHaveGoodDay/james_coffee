@@ -8,10 +8,21 @@
     <title>Coffee</title>
     <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+
+
+    <style>
+        /* css層級 */
+        /* 1. !import   */
+        /* 2. 行內css */
+        /* 3. id */
+        /* 4. class */
+        /* 5. 外部css */
+    </style>
 </head>
 
 <body>
-    <!-- emmet2 -->
+
+    <!-- emmet -->
 
     <!-- 最外層背景 -->
     <div class="banner">
@@ -28,27 +39,81 @@
     </div>
 
 
-
     <!-- 最新消息 -->
-    <div class="new">
-        <div class="new_card">
-            <img src="./img/new1.jpeg" alt="">
-            <p class="new_title">ＢＯＮＪＯＵＲ ＯＮＬＩＮＥ ＳＨＯＰ</p>
-            <hr>
-            <h2>夏日微風沁禮</h2>
-            <p>2020關懷疫情受災花農-母親節康乃馨贈送活動 [朋廚花現小農-用愛送馨花香勝疫] 你知道嗎？台灣土地今年孕育出的花田，燎原廣闊格外盛開！ 你知道嗎？台灣土地今年孕育出的花朵，色澤鮮豔格外靈活！</p>
-            <a href="">連結</a>
-        </div>
-        <div class="new_card">
-            <img src="./img/new2.jpeg" alt="">
-            <p class="new_title">BONJOUR NEWS</p>
-            <hr>
-            <h2>2020關懷疫情受災花農活動</h2>
-            <p>Summer Breeze present 找一個好日子，為許久不見的朋友送上一份微風般的禮物。 Find a good day and give a breeze-like gift to a friend
-                you haven't seen for a long time.</p>
-            <a href="">連結</a>
+    <div class="new_box">
+        <div class="new">
+            <div class="new_card">
+                <img src="./img/new1.jpeg" alt="">
+                <div class="card_data">
+                    <p class="new_title">BONJOUR ONLINE SHOP</p>
+                    <hr>
+                    <h2>夏日微風沁禮</h2>
+                    <p class="data_p">2020關懷疫情受災花農-母親節康乃馨贈送活動 [朋廚花現小農-用愛送馨花香勝疫] 你知道嗎？台灣土地今年孕育出的花田，燎原廣闊格外盛開！
+                        你知道嗎？台灣土地今年孕育出的花朵，色澤鮮豔格外靈活！</p>
+                    <a href="">連結</a>
+                </div>
+            </div>
+            <div class="new_card">
+                <img src="./img/new2.jpeg" alt="">
+                <div class="card_data">
+                    <p class="new_title">BONJOUR NEWS</p>
+                    <hr>
+                    <h2>2020關懷疫情受災花農活動</h2>
+                    <p class="data_p">Summer Breeze present 找一個好日子，為許久不見的朋友送上一份微風般的禮物。 Find a good day and give a
+                        breeze-like gift to a
+                        friend
+                        you haven't seen for a long time.</p>
+                    <a href="">連結</a>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- 背景固定 -->
+    <div class="bg_fixed">
+        <h3>KyrieHaveGoodDay</h3>
+    </div>
+
+    <!-- 關於我、聯絡我 -->
+    <div class="work">
+        <h3>一聲問候，愛上美味關係！</h3>
+
+        <!-- 卡片盒子 -->
+        <div class="work_list">
+            <div class="work_card" style="background-image: url(./img/new1.jpeg); ">
+                <h1>關於我</h1>
+            </div>
+            <div class="work_card" style="background-image: url(./img/new2.jpeg); ">
+                <h1>聯絡我</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- 地圖 -->
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49873.75546290304!2d121.66652346865935!3d25.095228523390833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x345d53d680c234c9%3A0x69a8cda4e910d57c!2z5rOw5a6J54CR5biD!5e0!3m2!1szh-TW!2stw!4v1661656991711!5m2!1szh-TW!2stw"
+        class="map" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+    <!-- footer -->
+
+    <footer>
+        <p>咖啡</p>
+        <div class="icon">
+
+            <a href="" target="_blank">
+                <img class="fb" src="./img/fb.png" alt="">
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+                <img src="./img/yt.png" alt="">
+            </a>
+
+        </div>
+        <p>Copyright &copy; 2022 kyire. All rights reserved.</p>
+    </footer>
+
+
 
 
 </body>
